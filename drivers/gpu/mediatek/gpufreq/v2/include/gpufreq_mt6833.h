@@ -297,7 +297,7 @@ struct gpufreq_status {
 
 #define SIGNED_OPP_GPU_NUM              ARRAY_SIZE(g_default_gpu)
 struct gpufreq_opp_info g_default_gpu[] = {
-	GPUOP(1740000, 105000, 105000, POSDIV_POWER_2, 1875, 0), /*  0 sign off */
+	GPUOP(1077000, 85625, 85625, POSDIV_POWER_2, 1875, 0), /*  0 sign off */
 	GPUOP(1059000, 84375, 84375, POSDIV_POWER_2, 1875, 0), /*  1 */
 	GPUOP(1051000, 83750, 83750, POSDIV_POWER_2, 1875, 0), /*  2 */
 	GPUOP(1042000, 83125, 83125, POSDIV_POWER_2, 1875, 0), /*  3 */
