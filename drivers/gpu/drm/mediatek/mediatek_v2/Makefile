@@ -1,4 +1,3 @@
-subdir-ccflags-y += -Werror
 
 #N17 code for HQ-301563 by p-chenzimo at 2023/07/06 start
 mediatek-drm-y := mtk_drm_drv.o \
