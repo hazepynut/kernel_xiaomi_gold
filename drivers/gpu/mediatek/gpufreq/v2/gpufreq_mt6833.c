@@ -3349,7 +3349,7 @@ struct mt_gpufreq_power_table_info *mt_gpufreq_get_power_table(void)
 }
 EXPORT_SYMBOL(mt_gpufreq_get_power_table);
 
-unsigned int mt_gpufreq_get_power_table_num(void)b
+unsigned int mt_gpufreq_get_power_table_num(void)
 {
 	return g_gpu.signed_opp_num;
 }
