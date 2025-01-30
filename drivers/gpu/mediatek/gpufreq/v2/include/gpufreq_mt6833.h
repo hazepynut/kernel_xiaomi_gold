@@ -13,7 +13,7 @@
 /*
  * 0 -> power on once then never off and disable DDK power on/off callback
  */
-#define GPUFREQ_POWER_CTRL_ENABLE       (1)
+#define GPUFREQ_POWER_CTRL_ENABLE       (0)
 /*
  * (DVFS_ENABLE, CUST_INIT)
  * (1, 1) -> DVFS enable and init to CUST_INIT_OPPIDX
@@ -22,8 +22,8 @@
  * (0, 0) -> DVFS disable
  */
 #define GPUFREQ_DVFS_ENABLE             (1)
-#define GPUFREQ_CUST_INIT_ENABLE        (0)
-#define GPUFREQ_CUST_INIT_OPPIDX        (0)
+#define GPUFREQ_CUST_INIT_ENABLE        (1)
+#define GPUFREQ_CUST_INIT_OPPIDX        (1)
 #define GPUFREQ_SELF_CTRL_MTCMOS        (1)
 /* N17 code for HQ-301145 by zhangyujian at 2023/6/29 start */
 #define T0C0  (1 <<  0)
@@ -297,7 +297,7 @@ struct gpufreq_status {
 
 #define SIGNED_OPP_GPU_NUM              ARRAY_SIZE(g_default_gpu)
 struct gpufreq_opp_info g_default_gpu[] = {
-	GPUOP(1077000, 85625, 85625, POSDIV_POWER_2, 1875, 0), /*  0 sign off */
+	GPUOP(1700000, 110000, 110000, POSDIV_POWER_2, 1875, 0), /*  0 sign off */
 	GPUOP(1059000, 84375, 84375, POSDIV_POWER_2, 1875, 0), /*  1 */
 	GPUOP(1051000, 83750, 83750, POSDIV_POWER_2, 1875, 0), /*  2 */
 	GPUOP(1042000, 83125, 83125, POSDIV_POWER_2, 1875, 0), /*  3 */

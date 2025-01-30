@@ -3349,7 +3349,7 @@ struct mt_gpufreq_power_table_info *mt_gpufreq_get_power_table(void)
 }
 EXPORT_SYMBOL(mt_gpufreq_get_power_table);
 
-unsigned int mt_gpufreq_get_power_table_num(void)
+unsigned int mt_gpufreq_get_power_table_num(void)b
 {
 	return g_gpu.signed_opp_num;
 }
@@ -3363,7 +3363,7 @@ EXPORT_SYMBOL(mt_gpufreq_get_power_table_num);
 static int __gpufreq_init_opp_table(struct platform_device *pdev)
 {
 	unsigned int segment_id = 0;
-	int i = 0, j = 0;
+	int i = 0;
 	int ret = GPUFREQ_SUCCESS;
 
 	/* init working OPP range */
@@ -3402,13 +3402,12 @@ static int __gpufreq_init_opp_table(struct platform_device *pdev)
 	}
 
 	for (i = 0; i < g_gpu.opp_num; i++) {
-		j = i + g_gpu.segment_upbound;
-		g_gpu.working_table[i].freq = g_gpu.signed_table[j].freq;
-		g_gpu.working_table[i].volt = g_gpu.signed_table[j].volt;
-		g_gpu.working_table[i].vsram = g_gpu.signed_table[j].vsram;
-		g_gpu.working_table[i].posdiv = g_gpu.signed_table[j].posdiv;
-		g_gpu.working_table[i].vaging = g_gpu.signed_table[j].vaging;
-		g_gpu.working_table[i].power = g_gpu.signed_table[j].power;
+		g_gpu.working_table[i].freq = g_gpu.signed_table[i].freq;
+		g_gpu.working_table[i].volt = g_gpu.signed_table[i].volt;
+		g_gpu.working_table[i].vsram = g_gpu.signed_table[i].vsram;
+		g_gpu.working_table[i].posdiv = g_gpu.signed_table[i].posdiv;
+		g_gpu.working_table[i].vaging = g_gpu.signed_table[i].vaging;
+		g_gpu.working_table[i].power = g_gpu.signed_table[i].power;
 
 		GPUFREQ_LOGD("GPU[%02d] Freq: %d, Volt: %d, Vsram: %d, Vaging: %d",
 			i, g_gpu.working_table[i].freq, g_gpu.working_table[i].volt,
