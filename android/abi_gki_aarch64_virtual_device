@@ -43,7 +43,7 @@
   cancel_delayed_work_sync
   cancel_work_sync
   capable
-  __cfi_slowpath
+  
   __check_object_size
   __class_create
   class_destroy

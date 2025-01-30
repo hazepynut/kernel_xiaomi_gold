@@ -43,7 +43,7 @@
   cec_register_adapter
   cec_transmit_attempt_done_ts
   cec_unregister_adapter
-  __cfi_slowpath
+  
   __check_object_size
   __class_create
   class_destroy

@@ -27,7 +27,7 @@
   __blk_rq_map_sg
   __blkdev_issue_discard
   __blkdev_issue_zeroout
-  __cfi_slowpath
+  
   __check_object_size
   __class_create
   __class_register

@@ -29,7 +29,7 @@ buffer_migrate_page
 __cancel_dirty_page
 capable
 capable_wrt_inode_uidgid
-__cfi_slowpath
+
 __check_object_size
 clean_bdev_aliases
 __cleancache_invalidate_inode

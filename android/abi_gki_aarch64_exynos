@@ -104,7 +104,7 @@
   cdev_device_add
   cdev_device_del
   cdev_init
-  __cfi_slowpath
+  
   cgroup_taskset_first
   cgroup_taskset_next
   __check_object_size

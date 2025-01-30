@@ -28,7 +28,7 @@ __brelse
 buffer_migrate_page
 capable
 capable_wrt_inode_uidgid
-__cfi_slowpath
+
 __check_object_size
 clear_inode
 clear_page_dirty_for_io

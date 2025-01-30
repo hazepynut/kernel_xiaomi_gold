@@ -142,7 +142,7 @@
   cdev_device_add
   cdev_device_del
   cdev_init
-  __cfi_slowpath
+  
   cgroup_add_legacy_cftypes
   cgroup_path_ns
   cgroup_taskset_first

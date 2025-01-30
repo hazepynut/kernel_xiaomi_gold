@@ -4,7 +4,7 @@
   arm64_const_caps_ready
   atomic_notifier_chain_register
   atomic_notifier_chain_unregister
-  __cfi_slowpath
+  
   __check_object_size
   clk_bulk_disable
   clk_bulk_enable
